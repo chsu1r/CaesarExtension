@@ -36,9 +36,11 @@ chrome.storage.local.get(["kerb"], function(result) {
     doneComments = new Set(result["kerb"]);
     doneComments = Array.from(doneComments);
     for (i = 0;i<doneComments.length; i++) {
-        document.getElementById(doneComments[i]).style.backgroundColor = "#66ff99";
-        document.getElementById(doneComments[i]).classList.add('collapsed');
-        document.getElementById(doneComments[i]).classList.remove('expanded');
+        if (document.getElementById(doneComments[i]) != null) {
+            document.getElementById(doneComments[i]).style.backgroundColor = "#66ff99";
+            document.getElementById(doneComments[i]).classList.add('collapsed');
+            document.getElementById(doneComments[i]).classList.remove('expanded');
+        }
     }
 });
 
