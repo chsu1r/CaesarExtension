@@ -1,3 +1,9 @@
-Click "start" to start recording changes. If user has already used extension and has "done" comments already, click "start" to collapse them. 
+Click "start" to start recording changes. If user has already used extension and has marked comments as finished already, click "start" to collapse them. 
 Click and collapse on a comment to mark it as "done".
 If you want to go back and make a comment "undone" again, just expand the comment again.
+
+INSTALLATION INSTRUCTIONS
+1) download the git repo as a zip file
+2) go to Chrome -> Settings -> More tools -> Extensions
+3) Make sure "developer mode" is turned on. Then click load unpacked, and select the zip file.
+4) Now you can enable "Caesar Extension"!!
