@@ -1,5 +1,4 @@
 function storeAndHighlight() {
-    console.log(this.parentNode.id);
     var commentId = this.parentNode.id;
     chrome.storage.local.get(function(cfg) {
       if(typeof(cfg["kerb"]) !== 'undefined' && cfg["kerb"] instanceof Array) {
@@ -17,7 +16,6 @@ function storeAndHighlight() {
 function unstoreAndUnhighlight() {
     if (this.classList.contains("collapsed")) {
         var commentId = this.id;
-        console.log("here");
         chrome.storage.local.get(function(cfg) {
           if(typeof(cfg["kerb"]) !== 'undefined' && cfg["kerb"] instanceof Array) { 
             var index = cfg["kerb"].indexOf(commentId);
